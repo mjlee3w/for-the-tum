@@ -1,0 +1,183 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Syne", sans-serif;
+  font-size: 36px;
+  margin: 0em;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌭</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
+h1 {
+  color: #373fff;
+  position: fixed;
+  top: 48px;
+  left: 48px;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+div.foods-list p,
+div.about-modal p {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+}
+
+h1,
+.marquee,
+#clear {
+  mix-blend-mode: difference;
+}
+
+canvas {
+  vertical-alignment: bottom;
+}
+
+.marquee {
+  font-family: "JetBrains Mono", monospace;
+  position: fixed;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1;
+  overflow: hidden;
+  background: #373fff;
+  color: #fff;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2000vw);
+  }
+}
+
+.marquee span {
+  /*   add linear so it doesn't speed up */
+  animation: moveLeft 400s infinite linear;
+  /* ensures the text stays all on the same line*/
+  white-space: nowrap;
+  display: block;
+  position: relative;
+}
+
+#clear {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  font-size: 18px;
+  background-color: #373fff;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+div.links {
+  position: fixed;
+  top: 70px;
+  right: 120px;
+}
+
+div.links a {
+  margin-left: 10px;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+
+div.links a:hover {
+  background-color: #373fff;
+  color: #fff;
+  font-style: italic;
+}
+
+div.foods-list,
+div.about-modal {
+  background-color: #fff;
+  border: 2px solid #111118;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 640px;
+  padding: 25px;
+  box-shadow: -14px 13px;
+  overflow: auto;
+  z-index: 1;
+}
+
+div.about-modal {
+  height: 350px;
+}
+
+p.subhead {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-style: italic;
+}
+
+div.foods-list::-webkit-scrollbar:vertical {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 12px;
+  height: 14px;
+  background-color: black;
+}
+
+.close-foods,
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px;
+  cursor: pointer;
+  font-style: bold;
+}
+
+.close-foods p,
+.close p {
+  font-size: 32px;
+  font-family: "Syne", sans-serif;
+}
+
+.mochi {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(6).png?v=1609541337168"),
+    auto; /*!emojicursor.app*/
+}
+
+.ramen {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(7).png?v=1609541412444"),
+    auto; /*!emojicursor.app*/
+}
+
+.waffles {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(8).png?v=1609541643451"),
+    auto;
+}
+
+.banana-milk {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(9).png?v=1609549031785"),
+    auto;
+}
+
+.samgyupsal {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(10).png?v=1609549128388"),
+    auto;
+}
+
+.peach {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(11).png?v=1609549204151"),
+    auto;
+}
+
+.nuggies {
+  cursor: url("https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Foutput-onlinepngtools%20(12).png?v=1609549282993"),
+    auto;
+}
