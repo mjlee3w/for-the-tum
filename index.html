@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.com/e95dfee7-4336-4b89-844e-51c8798a6ad2%2Fmochi.png?v=1609457380098"
+    />
+
+    <title>food for the tum</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="/drawer.js" defer></script>
+  </head>
+  <body>
+    <h1>FOR THE TUM</h1>
+
+    <canvas
+      id="drawer"
+      width="3758"
+      height="2016"
+      style="width: 1879px; height: 1008px;"
+    ></canvas>
+
+    <div class="marquee">
+      <span>click anywhere for tasty foods 🍒</span>
+    </div>
+
+    <div class="links">
+      <a class="foods" href="#">foods</a>
+      <a class="about" href="#">about</a>
+    </div>
+
+    <div class="foods-list">
+      <p class="close-foods">X</p>
+      <p class="subhead">foods inventory</p>
+      <div class="mochi">
+        <h2>Mochi Ice Cream</h2>
+        <p>
+          Not just any ice cream, but ice cream wrapped in sweet rice cake 😋
+        </p>
+      </div>
+      <div class="ramen">
+        <h2>Ramen</h2>
+        <p>
+          I like all types of noodles, but ramen just hits different.. whether
+          it's instant or authentic Japanese
+        </p>
+      </div>
+      <div class="waffles">
+        <h2>Waffles</h2>
+        <p>
+          Pancakes or waffles? Waffles have scoops to hold more syrup. Duh 🧇
+        </p>
+      </div>
+      <div class="banana-milk">
+        <h2>Banana Milk</h2>
+        <p>
+          A tasty Korean drink. I don't like bananas, but will gladly accept
+          banana milk
+        </p>
+      </div>
+      <div class="peach">
+        <h2>Peach</h2>
+        <p>Just peachy 🍑. My favorite fruit.. if you know what I mean 👀</p>
+      </div>
+      <div class="samgyupsal">
+        <h2>Samgyupsal</h2>
+        <p>Korean bacon, but better than bacon</p>
+      </div>
+      <div class="nuggies">
+        <h2>Chicken Nuggies</h2>
+        <p>Need a nuggies run stat! 🍗</p>
+      </div>
+    </div>
+
+    <div class="about-modal">
+      <p class="close">X</p>
+      <h2>For the Tum</h2>
+      <p>A homage to my favorite foods 🌭</p>
+      <p>
+        inspired by a superhi tutorial and
+        <a href="http://nostalgiaglitch.superhi.com">Nostalgia Glitch</a>
+      </p>
+      <h2>Tools</h2>
+      <p>written in HTML, CSS, JS</p>
+    </div>
+
+    <button id="clear">digest 💩</button>
+
+    <p style="size: 16px; position:fixed;bottom:5px;right:50px;">
+      made by mjlee3w
+    </p>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:70px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
